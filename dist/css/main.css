@@ -303,7 +303,8 @@ i {
 
 * {
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  box-sizing: border-box; }
 
 body {
   line-height: 1.5;
@@ -361,14 +362,13 @@ body {
     height: 70vh;
     margin: 0rem; }
     .section .section-container img {
-      height: 100%;
+      height: 70vh;
       object-fit: cover; }
     .section .section-container .section-content {
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
-      padding-bottom: 2rem; }
+      justify-content: center; }
       .section .section-container .section-content h2 {
         text-align: center;
         font-size: 3.5rem; }
@@ -382,37 +382,49 @@ body {
 
 #section-b {
   background: #396d01;
-  color: white; }
-  #section-b p {
-    max-width: 80%; }
+  color: white;
+  /* p{
+    max-width:80%;
+  } */ }
   #section-b .btn {
     color: #396d01; }
 
 .social-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr); }
-  .social-container .section.section-social {
-    position: relative; }
-    .social-container .section.section-social .section-container {
+  .social-container .section.section-social .section-container {
+    height: 100%; }
+    .social-container .section.section-social .section-container .section-content {
+      z-index: 1;
+      justify-content: center;
+      padding-top: 2rem;
+      padding-bottom: 0;
       height: 100%; }
-      .social-container .section.section-social .section-container .section-content {
-        z-index: 1;
-        justify-content: center;
-        padding: .5rem 0;
-        height: 100%;
-        width: 25vw; }
-        .social-container .section.section-social .section-container .section-content h2 {
-          font-size: 2rem; }
-        .social-container .section.section-social .section-container .section-content p {
-          text-align: Center;
-          font-size: 1.4rem; }
-        .social-container .section.section-social .section-container .section-content a {
-          text-align: center;
-          font-size: 1.4rem; }
-          .social-container .section.section-social .section-container .section-content a:hover {
-            transform: scale(1.2); }
-        .social-container .section.section-social .section-container .section-content img {
-          max-width: 40%; }
+      .social-container .section.section-social .section-container .section-content h2 {
+        font-size: 2rem; }
+      .social-container .section.section-social .section-container .section-content p {
+        text-align: Center;
+        font-size: 1.4rem;
+        padding-bottom: 0.5rem; }
+      .social-container .section.section-social .section-container .section-content a {
+        text-align: center;
+        font-size: 1.4rem;
+        width: 70%;
+        height: 70%;
+        padding-top: 0rem; }
+        .social-container .section.section-social .section-container .section-content a:hover {
+          transform: scale(1.2); }
+      .social-container .section.section-social .section-container .section-content img {
+        max-width: 55%;
+        height: 80%; }
+    .social-container .section.section-social .section-container .youtube {
+      background: #c2737f; }
+    .social-container .section.section-social .section-container .spotify {
+      background: #731f36; }
+    .social-container .section.section-social .section-container .whatsapp {
+      background: #c2737f; }
+    .social-container .section.section-social .section-container .instagram {
+      background: #731f36; }
 
 .showcase-article {
   height: 50vh;
@@ -460,7 +472,7 @@ body {
     grid-template-columns: 3fr 5fr;
     align-items: center; }
     .grid-container .grid-article img {
-      height: 80%;
+      height: 100%;
       object-fit: cover; }
     .grid-container .grid-article .article-content {
       display: flex;
@@ -492,6 +504,9 @@ body {
 
 #contact-a .text-fields {
   display: grid;
+  width: 90%;
+  margin: auto;
+  align-self: Center;
   grid-template-areas: 'name email' 'subject subject' 'message message';
   grid-gap: 1.2rem;
   margin-bottom: 1rem; }
@@ -532,6 +547,10 @@ body {
     font-size: 3rem; }
   #contact-b .contact-info p {
     font-size: 2rem; }
+  #contact-b .contact-info .smaller {
+    display: none; }
+  #contact-b .contact-info .bigger {
+    display: block; }
 
 #contact-c h1 {
   text-align: center;
@@ -542,6 +561,8 @@ body {
     display: block; }
   .bigger {
     display: none; }
+  .smaller {
+    display: block; }
   #main-nav .navbar {
     flex-direction: column;
     padding: 0;
@@ -577,14 +598,26 @@ body {
     padding: 0; }
   .article-container div:nth-child(2) img {
     height: 20vh; }
-  .social-container .section.section-social .section-container .section-content h2 {
-    font-size: 2rem; }
-  .social-container .section.section-social .section-container .section-content p {
-    font-size: 1.2rem; }
-  .social-container .section.section-social .section-container .section-content a {
-    font-size: 1.2rem; }
-  .social-container .section.section-social .section-container .section-content img {
-    max-width: 60%; }
+  .social-container {
+    grid-template-columns: repeat(1, 1fr); }
+    .social-container .section.section-social .section-container .section-content {
+      padding-top: 2rem; }
+      .social-container .section.section-social .section-container .section-content h2 {
+        font-size: 2rem; }
+      .social-container .section.section-social .section-container .section-content p {
+        font-size: 1.2rem; }
+      .social-container .section.section-social .section-container .section-content a {
+        font-size: 1.2rem; }
+      .social-container .section.section-social .section-container .section-content img {
+        max-width: 60%; }
+    .social-container .youtube {
+      background: #c2737f; }
+    .social-container .spotify {
+      background: #731f36; }
+    .social-container .whatsapp {
+      background: #731f36 !important; }
+    .social-container .instagram {
+      background: #c2737f !important; }
   .showcase-article {
     height: 30vh; }
   #contatti form {
@@ -593,8 +626,10 @@ body {
     font-size: 2rem; } }
 
 @media (max-width: 600px) {
-  .none {
+  .smaller {
     display: block; }
+  .bigger {
+    display: none; }
   #main-nav .navbar {
     flex-direction: column;
     padding: 1rem 0 0rem 0;
@@ -645,13 +680,15 @@ body {
           padding: 0;
           margin: 0;
           font-size: 1.2rem; }
-  #section-b .section-container {
-    grid-template-areas: 'img' 'txt'; }
-  #section-b img {
-    grid-area: img; }
-  #section-b .section-content {
-    padding: 0rem 0rem;
-    grid-area: txt; }
+  #section-b {
+    height: 100vh; }
+    #section-b .section-container {
+      grid-template-areas: 'img' 'txt'; }
+    #section-b img {
+      grid-area: img;
+      height: 40vh !important; }
+    #section-b .section-content {
+      grid-area: txt; }
   .social-container {
     grid-template-columns: repeat(1, 1fr); }
     .social-container .section.section-social .section-container {
@@ -659,7 +696,7 @@ body {
       .social-container .section.section-social .section-container .section-content {
         width: 100vw; }
         .social-container .section.section-social .section-container .section-content img {
-          max-width: 30%; }
+          max-width: 60%; }
   #eventi .items {
     grid-template-columns: repeat(1, 1fr); }
   .showcase-article {
@@ -718,6 +755,25 @@ body {
       margin: 0;
       align-items: center;
       justify-content: center; }
+  #contact-a .text-fields {
+    display: grid;
+    width: 100%;
+    grid-template-areas: 'name name' 'email email' 'subject subject' 'message message';
+    grid-gap: 1.2rem;
+    margin-bottom: 1rem; }
+  #contact-a .text-fields .name-input {
+    grid-area: name; }
+  #contact-a .text-fields .subject-input {
+    grid-area: subject; }
+  #contact-a .text-fields .email-input {
+    grid-area: email; }
+  #contact-a .text-fields .phone-input {
+    grid-area: phone; }
+  #contact-a .text-fields .message-input {
+    grid-area: message;
+    height: 100px; }
+  #contact-a .text-fields .text-input {
+    padding: 0.5rem 1rem; }
   #contatti #contact-b .container .contact-info {
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 1.5rem;

@@ -74,6 +74,7 @@ display:none;
 
 
 .social-container{
+  grid-template-columns: repeat(1,1fr);
  .section.section-social{
   .section-container {
    .section-content {
@@ -85,12 +86,14 @@ display:none;
     }
     img{
       max-width:60%;
-    }
-    
-    
+    }    
   }
   }
   } 
+  .youtube{background:$main-color}
+   .spotify{background:$secondary-color}
+   .whatsapp{background:$secondary-color !important}
+   .instagram{background:$main-color !important}
 }
 
 //showcase
@@ -104,30 +107,7 @@ form{
   padding: 0 2rem;
 }
 
-#contact-a .text-fields {
-  display: grid;
-  width:100%;
-  grid-template-areas: 'name name'
-  'email email'
- 'subject subject'
- 'message message';
-  grid-gap: 1.2rem;
-  margin-bottom: 1rem; }
-  #contact-a .text-fields .name-input {
-    grid-area: name; }
-  #contact-a .text-fields .subject-input {
-    grid-area: subject; }
-  #contact-a .text-fields .email-input {
-    grid-area: email; }
-  #contact-a .text-fields .phone-input {
-    grid-area: phone; }
-  #contact-a .text-fields .message-input {
-    grid-area: message;
-    height: 100px; }
-  #contact-a .text-fields .text-input {
-    padding: 0.5rem 1rem; }
-
-#contact-b .contact-info{
+    #contact-b .contact-info{
   h3{font-size:2rem;}
 }
 
@@ -245,8 +225,6 @@ form{
        height:40vh !important;
      }
      .section-content {
-
-      padding:0rem 0rem !important;
        grid-area: txt;
      }
    }
@@ -260,7 +238,7 @@ form{
       .section-content{
         width:100vw;
         img{
-          max-width:30%;
+          max-width:60%;
         }
       }
     }
