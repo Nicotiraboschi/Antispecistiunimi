@@ -697,6 +697,14 @@ body {
         width: 100vw; }
         .social-container .section.section-social .section-container .section-content img {
           max-width: 60%; }
+    .social-container .youtube {
+      background: #c2737f; }
+    .social-container .spotify {
+      background: #731f36; }
+    .social-container .whatsapp {
+      background: #c2737f; }
+    .social-container .instagram {
+      background: #731f36; }
   #eventi .items {
     grid-template-columns: repeat(1, 1fr); }
   .showcase-article {
