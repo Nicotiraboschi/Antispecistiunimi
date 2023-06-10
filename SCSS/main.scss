@@ -7,6 +7,7 @@
 *{
   padding:0;
   margin:0;
+  box-sizing: border-box;
 }
 
 body {
@@ -146,17 +147,6 @@ body {
   grid-template-columns: repeat(2,1fr);
  
   .section.section-social{
-    position:relative;
-    // &:before{
-    //   content:'';
-    //   position:absolute;
-    //   top:0;
-    //   left:0;
-    //   width:100%;
-    //   height:100%;
-    //   background: url(../img/colori.jpg) no-repeat center center/cover;
-    //   opacity:0.6
-    // }
     .section-container {
       height:100%;
      .section-content {
@@ -164,7 +154,6 @@ body {
        justify-content:center;
        padding: .5rem 0;
        height:100%;
-       width:25vw;
        h2{
          font-size:2rem;
        }
@@ -180,7 +169,7 @@ body {
        }
       }
       img {
-      max-width:40%;
+      max-width:55%;
       }
    }
    } 
@@ -287,6 +276,10 @@ img{
 
 #contact-a .text-fields {
   display: grid;
+  width:90%;
+  margin:auto;
+  align-self:Center;
+
   grid-template-areas: 'name email'
  'subject subject'
  'message message';
@@ -328,6 +321,8 @@ margin-bottom:1rem; }
   p{
     font-size: 2rem;
   }
+  .smaller {display:none;}
+  .bigger {display:block;}
 }
 
 #contact-c h1 {
