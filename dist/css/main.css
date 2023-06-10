@@ -683,12 +683,16 @@ body {
   #section-b {
     height: 100vh; }
     #section-b .section-container {
-      grid-template-areas: 'img' 'txt'; }
-    #section-b img {
+      grid-template-areas: 'img' 'txt';
+      align-items: center; }
+    #section-b div :nth-child(2) {
       grid-area: img;
-      height: 40vh !important; }
+      height: 60vh !important;
+      align-items: center; }
     #section-b .section-content {
       grid-area: txt; }
+      #section-b .section-content p {
+        height: auto !important; }
   .social-container {
     grid-template-columns: repeat(1, 1fr); }
     .social-container .section.section-social .section-container {

@@ -219,13 +219,17 @@ form{
        grid-template-areas:
        'img'
        'txt';
+       align-items: center;
+       
      }
-     img {
+     div :nth-child(2){
        grid-area: img;
-       height:40vh !important;
+       height:60vh !important;
+       align-items: center;
      }
      .section-content {
        grid-area: txt;
+       p {height:auto !important;}
      }
    }
   
