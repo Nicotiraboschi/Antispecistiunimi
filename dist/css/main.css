@@ -681,17 +681,17 @@ body {
           margin: 0;
           font-size: 1.2rem; }
   #section-b {
-    height: 100vh; }
+    height: 90vh; }
     #section-b .section-container {
       grid-template-areas: 'img' 'txt';
       align-items: center; }
     #section-b div :nth-child(2) {
       grid-area: img;
-      height: 55vh !important;
+      height: 100%;
       align-items: center; }
     #section-b .section-content {
       grid-area: txt;
-      height: 45vh, !important; }
+      height: 4vh, !important; }
       #section-b .section-content p {
         height: auto !important; }
   .social-container {

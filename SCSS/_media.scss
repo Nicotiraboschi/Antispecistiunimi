@@ -214,22 +214,21 @@ form{
   }
 
    #section-b {
-    height:100vh;
+    height:90vh;
      .section-container {
        grid-template-areas:
        'img'
        'txt';
        align-items: center;
-       
      }
      div :nth-child(2){
        grid-area: img;
-       height:55vh !important;
+       height:100%;
        align-items: center;
      }
      .section-content {
        grid-area: txt;
-       height: 45vh, !important;;
+       height: 4vh, !important;;
        p {height:auto !important;}
      }
    }
