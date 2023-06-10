@@ -229,6 +229,7 @@ form{
      }
      .section-content {
        grid-area: txt;
+       height: 45vh, !important;;
        p {height:auto !important;}
      }
    }

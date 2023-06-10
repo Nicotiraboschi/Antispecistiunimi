@@ -690,7 +690,8 @@ body {
       height: 55vh !important;
       align-items: center; }
     #section-b .section-content {
-      grid-area: txt; }
+      grid-area: txt;
+      height: 45vh, !important; }
       #section-b .section-content p {
         height: auto !important; }
   .social-container {
