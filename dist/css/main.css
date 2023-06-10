@@ -702,9 +702,9 @@ body {
     .social-container .spotify {
       background: #731f36; }
     .social-container .whatsapp {
-      background: #c2737f; }
+      background: #c2737f !important; }
     .social-container .instagram {
-      background: #731f36; }
+      background: #731f36 !important; }
   #eventi .items {
     grid-template-columns: repeat(1, 1fr); }
   .showcase-article {
